@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula Virtual - Lección Multimedia</title>
+</head>
+<body>
+
+  <main>
+    <h1>Unidad 3: Reproductores y Medios Adaptativos</h1>
+
+    <section class="video-section">
+      <h2>Videoclase Interactiva</h2>
+
+      <video controls preload="metadata" width="640">
+        <source src="videofoca.mp4" type="video/mp4">
+        <track
+          kind="captions"
+          src="captions/clase-es.vtt"
+          srclang="es"
+          label="Español"
+          default
+        >
+        Tu navegador no soporta vídeo HTML5.
+      </video>
+    </section>
+
+    <section class="image-section">
+      <h2>Esquema de Arquitectura Web</h2>
+
+      <figure>
+        <picture>
+          <source srcset="images.avif" type="image/avif">
+          <source srcset="images.webp" type="image/webp">
+          <img
+            src="images.png"
+            alt="Esquema de arquitectura web"
+            loading="lazy"
+          >
+        </picture>
+        <figcaption>Esquema de arquitectura web.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+</body>
+</html>
